@@ -1,50 +1,23 @@
-header {
+body {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-main {
-  display: flex;
-  margin: 20px;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  height: 100vh;
 }
-allbox {
-  width: 680px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+@keyframes superSexyCoinFlip {
+  0% {
+    transform: rotatey(0);
+  }
+  50% {
+    transform: rotatey(180deg) translatey(100px);
+  }
+  100% {
+    transform: rotatey(0);
+  }
 }
-box {
-  height: 400px;
-  width: 300px;
-  margin: 20px;
-  position: relative;
-}
-div {
-  position: absolute;
-  background-color: white;
-  width: 300px;
-  height: 130px;
-  top: 30px;
-  padding: 5px;
-}
-allbox > box:nth-child(1) {
-  background-color: tomato;
-}
-allbox > box:nth-child(2) {
-  background-color: teal;
-}
-
-allbox > box:nth-child(3) {
-  background-color: burlywood;
-}
-
-allbox > box:nth-child(4) {
-  background-color: thistle;
-}
-div > h2 {
-  font-style: italic;
+img {
+  border: 10px solid black;
+  border-radius: 50%;
+  width: 200px;
+  animation: superSexyCoinFlip 5s ease-in-out infinite;
 }
