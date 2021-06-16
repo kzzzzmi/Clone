@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes superSexyCoinFlip {
+  0% {
+    transform: rotatey(0);
+  }
+  50% {
+    transform: rotatey(180deg) translatey(100px);
+  }
+  100% {
+    transform: rotatey(0);
+  }
+}
+img {
+  border: 10px solid black;
+  border-radius: 50%;
+  width: 200px;
+  animation: superSexyCoinFlip 5s ease-in-out infinite;
+}
