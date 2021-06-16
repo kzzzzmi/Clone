@@ -1,23 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 body {
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  padding-left: 30px;
+}
+.status-bar {
+  display: flex;
+  align-items: flex-end;
+  height: 7%;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column > span {
+  font-size: 200%;
+  font-weight: bolder;
+}
+
+.main-header {
+  display: flex;
+  margin-top: 10%;
+  height: 20%;
+}
+.main-header__column {
+  width: 50%;
+}
+.main-header__column:first-child div {
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  height: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  border-radius: 15%;
 }
-@keyframes superSexyCoinFlip {
-  0% {
-    transform: rotatey(0);
-  }
-  50% {
-    transform: rotatey(180deg) translatey(100px);
-  }
-  100% {
-    transform: rotatey(0);
-  }
+.main-header__column:last-child span:first-child {
+  font-size: 40px;
+  line-height: 1.25;
 }
-img {
-  border: 10px solid black;
+#play-like-add-form {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+#play-like-add-form button {
+  height: 100%;
+}
+#play-like-add-form button:first-child {
+  width: 45%;
+  border-radius: 10%;
+  border-width: 1px 8px 5px 5px;
+}
+#play-like-add-form button:nth-child(2),
+button:last-child {
+  width: 20%;
   border-radius: 50%;
-  width: 200px;
-  animation: superSexyCoinFlip 5s ease-in-out infinite;
+  border-width: 1px 8px 5px 5px;
+}
+.playlist {
+  margin-top: 5%;
+  display: flex;
+  height: 45%;
+}
+.playlist__li {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.playlist__boxmodel {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+.playlist__boxmodel div {
+  width: 100%;
+  height: 20%;
+  border-radius: 15%;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+.playlist__li li {
+  font-size: 25px;
+  line-height: 2;
+}
+.playlist__li span {
+  font-size: 15px;
+  font-weight: unset;
+}
+.playlist__boxmodel div:first-child {
+  background-color: tomato;
+}
+.playlist__boxmodel div:nth-child(2) {
+  background-color: pink;
+}
+.playlist__boxmodel div:nth-child(3) {
+  background-color: blue;
+}
+.playlist__boxmodel div:last-child {
+  background-color: teal;
 }

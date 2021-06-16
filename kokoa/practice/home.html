@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Jam Time</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="img/jam.jpg" />
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-times fa-2x"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>Playlist</span>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="main-header__column">
+        <div>
+          <i class="fas fa-music fa-2x"></i>
+        </div>
+      </div>
+      <div class="main-header__column">
+        <span>Random Love<br /></span>
+        <span>by Divay kapoor</span>
+      </div>
+    </header>
+
+    <form id="play-like-add-form">
+      <button type="button" class="far fa-play-circle fa-2x">Play</button>
+      <button type="button" class="far fa-thumbs-up fa-2x"></button>
+      <button type="button" class="fas fa-plus fa-2x"></button>
+    </form>
+
+    <footer class="playlist">
+      <ul class="playlist__boxmodel">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </ul>
+      <ul class="playlist__li">
+        <li>Matargasti<br /></li>
+        <span>Mohit Chauhan</span>
+        <li>Attitude<br /></li>
+        <span>Lewis OfMan - attitude</span>
+        <li>Try Everthing<br /></li>
+        <span>Shakira - Zootopia</span>
+        <li>Sunflower<br /></li>
+        <span>Joseph Vincent - Sunflower</span>
+      </ul>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
