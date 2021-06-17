@@ -1,116 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Inter&family=Nanum+Pen+Script&display=swap");
+
+@import "reset.css";
+
 body {
-  height: 100vh;
-  font-family: "Oswald", sans-serif;
-  padding-left: 30px;
-}
-.status-bar {
-  display: flex;
-  align-items: flex-end;
-  height: 7%;
-}
-.status-bar__column {
-  width: 33%;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column > span {
-  font-size: 200%;
-  font-weight: bolder;
+  height: 90vh;
 }
 
-.main-header {
+.status-bar {
   display: flex;
-  margin-top: 10%;
-  height: 20%;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  background-color: aquamarine;
 }
-.main-header__column {
-  width: 50%;
+.status-bar span {
+  font-size: 30px;
+  font-family: "Big Shoulders Stencil Display", cursive;
 }
-.main-header__column:first-child div {
-  border: 2px solid black;
-  background-color: cornflowerblue;
-  height: 100%;
-  width: 80%;
-  display: flex;
-  justify-content: center;
+.search-box {
+  position: relative;
+  bottom: 25px;
   align-items: center;
-  border-radius: 15%;
+  display: flex;
+  height: 50px;
+  padding: 0 20px;
 }
-.main-header__column:last-child span:first-child {
+.search-box input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 10px -3px teal;
+}
+.search-box input::placeholder {
+  opacity: 0.4;
+}
+.search-box input:focus {
+  outline: none;
+}
+.search-box i {
+  position: relative;
+  left: -30px;
+}
+.main-list {
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-list h1 {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  font-family: "Nanum Pen Script", cursive;
   font-size: 40px;
-  line-height: 1.25;
 }
-#play-like-add-form {
-  height: 10%;
+.main-list__firstimg {
+  display: flex;
+  padding: 15px 0;
+}
+.main-list__firstimg img {
+  width: 100px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.main-list h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+.main-list__row {
+  padding: 10px;
+}
+.main-list h3 {
+  padding-bottom: 15px;
+  opacity: 0.4;
+}
+.main-list__firstimg span {
+  margin-right: 20px;
+}
+.main-list-icon {
+  display: flex;
+}
+.main-list-icon div:first-child {
+  margin-right: 70px;
+  background-color: aquamarine;
+  width: 30px;
+  border-radius: 50%;
+}
+.main-list-icon i {
+  position: relative;
+  left: 9px;
+  top: 6px;
+}
+.main-list-icon div:nth-child(2) {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 30px;
+  border-radius: 10px;
+  align-items: center;
+}
+.main-list-icon span {
+  position: relative;
+  left: 10px;
+  font-size: 15x;
+}
+.main-list__booklist img {
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+}
+.main-list__booklist {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 10%;
+  padding: 10px;
 }
-#play-like-add-form button {
-  height: 100%;
+.main-list__author img {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  margin-right: 20px;
 }
-#play-like-add-form button:first-child {
-  width: 45%;
-  border-radius: 10%;
-  border-width: 1px 8px 5px 5px;
-}
-#play-like-add-form button:nth-child(2),
-button:last-child {
-  width: 20%;
-  border-radius: 50%;
-  border-width: 1px 8px 5px 5px;
-}
-.playlist {
-  margin-top: 5%;
+.main-list__author {
   display: flex;
-  height: 45%;
-}
-.playlist__li {
-  list-style: none;
-  padding: 0;
-  width: 90%;
-  margin-left: 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-.playlist__boxmodel {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 20%;
-}
-.playlist__boxmodel div {
-  width: 100%;
-  height: 20%;
-  border-radius: 15%;
-  border: 2px solid black;
-  margin-bottom: 5px;
-}
-.playlist__li li {
-  font-size: 25px;
-  line-height: 2;
-}
-.playlist__li span {
-  font-size: 15px;
-  font-weight: unset;
-}
-.playlist__boxmodel div:first-child {
-  background-color: tomato;
-}
-.playlist__boxmodel div:nth-child(2) {
-  background-color: pink;
-}
-.playlist__boxmodel div:nth-child(3) {
-  background-color: blue;
-}
-.playlist__boxmodel div:last-child {
-  background-color: teal;
+  padding: 10px;
 }
