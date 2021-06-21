@@ -1,0 +1,23 @@
+@import "reset.css";
+
+/* Components */
+@import "components/status-bar.css";
+
+/* Screens */
+@import "screens/firstscreen.css";
+@import "screens/secondscreen.css";
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  height: 103vh;
+  justify-content: space-between;
+}
+body > div {
+  height: 85%;
+  background-color: white;
+  width: 45%;
+  border-radius: 20px;
+}

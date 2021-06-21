@@ -1,0 +1,102 @@
+.first-screen-song-title {
+  padding: 0px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-screen-song-title img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgb(151, 209, 175);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.first-screen__title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+.first-screen__subtitle {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.first-screen__likebox {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  text-align: center;
+}
+.first-screen__likebox div:first-child {
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+.first-screen__likebox div:last-child {
+  display: flex;
+  background-color: wheat;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+.first-screen-playlist {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+.first-screen_song {
+  display: flex;
+  padding: 10px;
+
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.first-screen_song:nth-child(2) {
+  background-color: wheat;
+}
+.first-screen_song img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.first-screen_song h2:first-child {
+  font-size: 14px;
+  opacity: 0.5;
+  margin: 5px 0 10px 0;
+}
+.first-screen_song i {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.first-screen__playing {
+  display: flex;
+  margin: 0 20px 0 20px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  align-items: center;
+  position: relative;
+}
+.first-screen__playing div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first-screen__playing div h2:first-child {
+  opacity: 0.5;
+}
+.first-screen__playing div:last-child {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 10px;
+}
+.first-screen__playing i {
+  margin-right: 20px;
+}
