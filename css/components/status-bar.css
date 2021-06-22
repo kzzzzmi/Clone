@@ -7,6 +7,7 @@
   padding: 5px 3px;
   top: 0px;
   opacity: 0.9;
+  background-color: peachpuff;
 }
 .status-bar__column {
   width: 33%;
@@ -15,8 +16,7 @@
   margin-right: 5px;
 }
 .status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .status-bar__column:last-child {
   display: flex;
